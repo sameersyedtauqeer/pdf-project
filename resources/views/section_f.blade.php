@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strategic Planning - Questionnaire.pdf
     </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        {!! file_get_contents(resource_path('css/bootstrap.min.css')) !!}
+    </style>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
@@ -287,7 +290,7 @@
 
 
     <section>
-        <div class="container2 page-break">
+        <div class="container2 ">
             <div class="container3">
                 <div class="card">
                     <div class="table-wrapper ">
@@ -300,7 +303,7 @@
                                                 <!-- <img src="{{asset('assets/images/logo.jpg')}}" width="100%" alt=""> -->
                                             </div>
                                             <div class="table-cell text-center py-5">
-                                                <img src="{{asset('assets/images/logo.jpg')}}" width="80%" alt="">
+                                                <img src="{{ $images['logoDark'] }}" width="80%" alt="Logo">
                                             </div>
                                             <div class="table-cell text-center ">
                                                 <!-- <img src="{{asset('assets/images/logo.jpg')}}" width="100%" alt=""> -->
@@ -738,106 +741,6 @@
         </div>
 
 
-
-        <!-- ================ -->
-        <div class="container2 page-break">
-            <div class="container3">
-
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section E: Marketing</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">F-3</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-
-
-
-                                <div>
-                                    <h3 class="fw-bold">
-                                        GRAND OPENING
-                                    </h3>
-
-                                    <p class="para fw-light">
-                                        Per your franchise agreement, you are not required to expend a specified amount
-                                        prior to opening and during your initial three months of operation. We do
-                                        recommend an initial marketing program and marketing campaign to get the word
-                                        out to your area about the Kosha Hibachi concept. Your grand opening is a very
-                                        important date; if done correctly, you will have started your business off with
-                                        a successful day of sales, and more importantly, you will have created a
-                                        grouping of loyal customers that will return on a weekly basis.
-                                    </p>
-                                </div>
-
-
-
-                                <div>
-                                    <h3 class="fw-bold">
-                                        INTERNET (DIGITAL) MARKETING
-                                    </h3>
-
-                                    <p class="para fw-light">
-                                        The Franchise Agreement provides that Kosha Hibachi will include on the
-                                        corporate website information about your Kosha Hibachi franchise.
-                                    </p>
-                                </div>
-
-
-                                <div>
-                                    <h3 class="fw-bold">
-                                        REGIONAL PROMOTIONS
-                                    </h3>
-
-                                    <p class="para fw-light">
-                                        From time to time, special regional promotions will be developed to feature a
-                                        sales opportunity for a limited time or to increase name recognition in a
-                                        particular area. Your participation in these events will be as stated by your
-                                        Franchise Agreement. You will be informed well in advance of special promotions
-                                        so you will have time to successfully prepare.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
 
 
         <!-- ================ -->

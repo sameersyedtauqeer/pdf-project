@@ -9,6 +9,7 @@ Route::get('/', function () {
     $imagePaths = [
         'bg1' => public_path('assets/images/marta.jpg'),
         'logo' => public_path('assets/images/logo-white.png'),
+        'logoDark' => public_path('assets/images/logo.jpg'),
         'foodtruck' => public_path('assets/images/food-truck-industry.jpg'),
         'section3' => public_path('assets/images/premium_photo.jpg'),
         'handshake' => public_path('assets/images/hand-shake.png'),
@@ -18,6 +19,9 @@ Route::get('/', function () {
         'food1' => public_path('assets/images/food1.jpg'),
         'food2' => public_path('assets/images/food2.jpg'),
         'food3' => public_path('assets/images/food3.jpg'),
+        'imageSece' => public_path('assets/images/imageSece.jpg'),
+        'ourstory' => public_path('assets/images/ourstory.jpg'),
+        'ourstory2' => public_path('assets/images/ourstory2.jpg'),
     ];
 
 
@@ -32,24 +36,11 @@ Route::get('/', function () {
     }
 
     // Step 2: Load view and pass the images array
-    $pdf = Pdf::loadView('brochure', ['images' => $images])
+    $pdf = Pdf::loadView('franchise_manual', ['images' => $images])
         ->setPaper('a4');
 
     return $pdf->stream('brochure.pdf');
 });
 
 
-// use Illuminate\Support\Facades\Route;
-// use Barryvdh\DomPDF\Facade\Pdf;
 
-// Route::get('/', function () {
-//     $options = new \Dompdf\Options();
-//     $options->set('isRemoteEnabled', true); // Enable loading images from URLs
-
-//     $pdf = Pdf::loadView('section_g', [])
-//         ->setPaper('a4', 'portrait');
-
-//     $pdf->getDomPDF()->setOptions($options); // Apply the options to the DomPDF instance
-
-//     return $pdf->stream();
-// });

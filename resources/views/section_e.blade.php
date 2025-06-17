@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strategic Planning - Questionnaire.pdf
     </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+    <style>
+        {!! file_get_contents(resource_path('css/bootstrap.min.css')) !!}
+    </style>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
@@ -287,7 +288,7 @@
 
 
     <section>
-        <div class="container2 page-break">
+        <div class="container2">
             <div class="container3">
                 <div class="card">
                     <div class="table-wrapper ">
@@ -300,7 +301,7 @@
                                                 <!-- <img src="{{asset('assets/images/logo.jpg')}}" width="100%" alt=""> -->
                                             </div>
                                             <div class="table-cell text-center py-5">
-                                                <img src="{{asset('assets/images/logo.jpg')}}" width="80%" alt="">
+                                                <img src="{{ $images['logoDark'] }}" width="80%" alt="Logo">
                                             </div>
                                             <div class="table-cell text-center ">
                                                 <!-- <img src="{{asset('assets/images/logo.jpg')}}" width="100%" alt=""> -->
@@ -878,6 +879,27 @@
                                         <li> Open the cash register/cash box</li>
                                         <li> Wait for orders</li>
                                     </ul>
+
+                                    <h2 class="fw-bold">
+                                        AT THE END OF THE DAY
+                                    </h2>
+
+                                    <ul class="s-15 fw-light">
+                                        <li> Consolidate prepped food that was left over with what will be needed for
+                                            the next day</li>
+                                        <li> Clean the trailer from the day</li>
+                                        <li> Put away the cash box / cash register</li>
+                                        <li> Turn off the POS/iPad</li>
+                                        <li> Turn off the cell phone</li>
+                                        <li> Put away the tip jar</li>
+                                        <li> Take down and store the flag</li>
+                                        <li> Close the service window</li>
+                                        <li> Lock the trailer and the commissary kitchen</li>
+
+                                    </ul>
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -911,7 +933,6 @@
 
 
         </div>
-
 
         <!-- ================== -->
         <div class="container2 page-break">
@@ -933,78 +954,7 @@
                         <div class="table-row ">
                             <div class="table-cell  border-0 pt-3">
                                 <div>
-                                    <h2 class="fw-bold">
-                                        AT THE END OF THE DAY
-                                    </h2>
 
-                                    <ul class="s-15 fw-light">
-                                        <li> Consolidate prepped food that was left over with what will be needed for
-                                            the next day</li>
-                                        <li> Clean the trailer from the day</li>
-                                        <li> Put away the cash box / cash register</li>
-                                        <li> Turn off the POS/iPad</li>
-                                        <li> Turn off the cell phone</li>
-                                        <li> Put away the tip jar</li>
-                                        <li> Take down and store the flag</li>
-                                        <li> Close the service window</li>
-                                        <li> Lock the trailer and the commissary kitchen</li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- ================== -->
-        <div class="container2 page-break">
-            <div class="container3">
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section E: Daily Procedures</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-5</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
                                     <h2 class="fw-bold">
                                         THROUGHOUT THE DAY
                                     </h2>
@@ -1077,6 +1027,7 @@
         </div>
 
 
+
         <!-- ================== -->
         <div class="container2 page-break">
             <div class="container3">
@@ -1087,7 +1038,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-6</p>
+                            <p class="s-10 mb-0">E-5</p>
                         </div>
 
                     </div>
@@ -1117,61 +1068,8 @@
                                             the same time, check your air filters.</li>
                                         <li> Do a periodic battery test, especially during the winter.</li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
 
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- ================== -->
-        <div class="container2 page-break">
-            <div class="container3">
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section E: Daily Procedures</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-7</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
                                     <h3 class="fw-bold">
                                         TRAILER MAINTENANCE
                                     </h3>
@@ -1205,6 +1103,7 @@
                                             trailer and refill the water tank on the trailer with a hose (for the sinks)
                                         </li>
                                     </ul>
+
                                 </div>
                             </div>
                         </div>
@@ -1233,11 +1132,9 @@
 
                     </div>
                 </div>
-
             </div>
-
-
         </div>
+
 
 
         <!-- ================== -->
@@ -1250,7 +1147,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-8</p>
+                            <p class="s-10 mb-0">E-6</p>
                         </div>
 
                     </div>
@@ -1260,6 +1157,7 @@
                         <div class="table-row ">
                             <div class="table-cell  border-0 pt-3">
                                 <div>
+
                                     <h3 class="fw-bold">
                                         PRE-OPENING CHECKLIST (EXAMPLE)
                                     </h3>
@@ -1300,6 +1198,7 @@
 
                                     </ul>
 
+
                                 </div>
                             </div>
                         </div>
@@ -1334,7 +1233,6 @@
 
         </div>
 
-
         <!-- ================== -->
         <div class="container2 page-break">
             <div class="container3">
@@ -1345,7 +1243,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-9</p>
+                            <p class="s-10 mb-0">E-7</p>
                         </div>
 
                     </div>
@@ -1498,7 +1396,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-9</p>
+                            <p class="s-10 mb-0">E-6</p>
                         </div>
 
                     </div>
@@ -1599,7 +1497,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-11</p>
+                            <p class="s-10 mb-0">E-7</p>
                         </div>
 
                     </div>
@@ -1651,61 +1549,6 @@
                                     </p>
 
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- ================== -->
-        <div class="container2 page-break">
-            <div class="container3">
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section E: Daily Procedures</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-12</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
                                     <h3 class="fw-bold">
                                         PHONE ETTIQUETTE
                                     </h3>
@@ -1791,6 +1634,7 @@
         </div>
 
 
+
         <!-- ================== -->
         <div class="container2 page-break">
             <div class="container3">
@@ -1801,7 +1645,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-12</p>
+                            <p class="s-10 mb-0">E-8</p>
                         </div>
 
                     </div>
@@ -1856,61 +1700,6 @@
                                     </ul>
 
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- ================== -->
-        <div class="container2 page-break">
-            <div class="container3">
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section E: Daily Procedures</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-14</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
                                     <h4 class="fw-bold">
                                         ADDRESSING CUSTOMER COMPLAINTS
                                     </h4>
@@ -1967,6 +1756,8 @@
 
                                     </p>
 
+
+
                                 </div>
                             </div>
                         </div>
@@ -2002,6 +1793,7 @@
         </div>
 
 
+
         <!-- ================== -->
         <div class="container2 page-break">
             <div class="container3">
@@ -2012,7 +1804,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-15</p>
+                            <p class="s-10 mb-0">E-9</p>
                         </div>
 
                     </div>
@@ -2122,7 +1914,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-16</p>
+                            <p class="s-10 mb-0">E-10</p>
                         </div>
 
                     </div>
@@ -2207,7 +1999,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-17</p>
+                            <p class="s-10 mb-0">E-11</p>
                         </div>
 
                     </div>
@@ -2282,61 +2074,6 @@
                                         to the surface. Make sure you use the right type of language.
                                     </p>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- ================== -->
-        <div class="container2 page-break">
-            <div class="container3">
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section E: Daily Procedures</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-18</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
 
                                     <h3 class=" fw-bold">
                                         QUALITY CONTROL
@@ -2368,6 +2105,7 @@
                                         <li> Correct the items immediately.</li>
                                         <li> Inform the Manager.</li>
                                     </ul>
+
                                 </div>
                             </div>
                         </div>
@@ -2404,6 +2142,8 @@
 
 
 
+
+
         <!-- ================== -->
         <div class="container2 page-break">
             <div class="container3">
@@ -2414,7 +2154,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-19</p>
+                            <p class="s-10 mb-0">E-12</p>
                         </div>
 
                     </div>
@@ -2501,7 +2241,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-20</p>
+                            <p class="s-10 mb-0">E-13</p>
                         </div>
 
                     </div>
@@ -2602,7 +2342,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-21</p>
+                            <p class="s-10 mb-0">E-14</p>
                         </div>
 
                     </div>
@@ -2630,8 +2370,9 @@
                                         <div class="table-row">
 
                                             <div class="table-cell text-center pt-3">
-                                                <img src="{{asset('assets/images/imageSece.jpg')}}" height="700px"
-                                                    width="80%" alt="">
+                                                <img src="{{ $images['imageSece'] }}" height="700px" width="80%"
+                                                    alt="Logo">
+
                                             </div>
                                         </div>
                                     </div>
@@ -2681,7 +2422,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-22</p>
+                            <p class="s-10 mb-0">E-15</p>
                         </div>
 
                     </div>
@@ -2744,65 +2485,7 @@
                                         <li> Wash in a combination of soap and warm water for at least 20 seconds.</li>
                                         <li> First, thoroughly wet your hands; then apply liquid or clean bar soap.
                                         </li>
-                                    </ul>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- ================== -->
-        <div class="container2 page-break">
-            <div class="container3">
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section E: Daily Procedures</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-22</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
-
-                                    <ul class="s-15 fw-light">
                                         <li>
                                             Next, rub your hands vigorously together for several seconds and scrub all
                                             surfaces.
@@ -2839,7 +2522,6 @@
                                     </p>
 
 
-
                                 </div>
                             </div>
                         </div>
@@ -2875,6 +2557,8 @@
         </div>
 
 
+
+
         <!-- ================== -->
         <div class="container2 page-break">
             <div class="container3">
@@ -2885,7 +2569,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-23</p>
+                            <p class="s-10 mb-0">E-16</p>
                         </div>
 
                     </div>
@@ -2982,7 +2666,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-24</p>
+                            <p class="s-10 mb-0">E-17</p>
                         </div>
 
                     </div>
@@ -3037,63 +2721,6 @@
                                     </ul>
 
 
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- ================== -->
-        <div class="container2 page-break">
-            <div class="container3">
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section E: Daily Procedures</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-25</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
-
                                     <p class="para fw-light">
                                         Some general maintenance guidelines to follow to assist you in minimizing the
                                         need for equipment repair:
@@ -3146,6 +2773,9 @@
                                     </ul>
 
 
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -3181,6 +2811,8 @@
         </div>
 
 
+
+
         <!-- ================== -->
         <div class="container2 page-break">
             <div class="container3">
@@ -3191,7 +2823,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-26</p>
+                            <p class="s-10 mb-0">E-18</p>
                         </div>
 
                     </div>
@@ -3296,7 +2928,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-27</p>
+                            <p class="s-10 mb-0">E-19</p>
                         </div>
 
                     </div>
@@ -3376,64 +3008,6 @@
                                     </p>
 
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-
-        <!-- ================== -->
-        <div class="container2 page-break">
-            <div class="container3">
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section E: Daily Procedures</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-28</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
-
-
                                     <h3 class="fw-bold">
                                         PREVENTING FIRES
                                     </h3>
@@ -3483,6 +3057,7 @@
 
                                     </p>
 
+
                                 </div>
                             </div>
                         </div>
@@ -3528,7 +3103,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-29</p>
+                            <p class="s-10 mb-0">E-20</p>
                         </div>
 
                     </div>
@@ -3619,7 +3194,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-30</p>
+                            <p class="s-10 mb-0">E-21</p>
                         </div>
 
                     </div>
@@ -3687,62 +3262,6 @@
                                         <li> Employee training </li>
                                     </ul>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-
-        <!-- ================== -->
-        <div class="container2 page-break">
-            <div class="container3">
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section E: Daily Procedures</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-31</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
 
                                     <h3 class="fw-bold">
                                         ELECTRICAL
@@ -3788,6 +3307,7 @@
                                         aid program are dependent on the circumstances of each workplace and employer.
                                     </p>
 
+
                                 </div>
                             </div>
                         </div>
@@ -3824,6 +3344,8 @@
 
 
 
+
+
         <!-- ================== -->
         <div class="container2 page-break">
             <div class="container3">
@@ -3834,7 +3356,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-32</p>
+                            <p class="s-10 mb-0">E-22</p>
                         </div>
 
                     </div>
@@ -3870,61 +3392,7 @@
                                             that the accident has been reported to your insurance company.</li>
                                     </ol>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- ================== -->
-        <div class="container2 page-break">
-            <div class="container3">
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section E: Daily Procedures</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-33</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
 
                                     <h3 class="fw-bold">
                                         EMPLOYEE INJURY OR ILLNESS
@@ -3950,6 +3418,7 @@
                                         <li> Notify your insurance company.</li>
                                     </ol>
 
+
                                 </div>
                             </div>
                         </div>
@@ -3986,6 +3455,8 @@
 
 
 
+
+
         <!-- ================== -->
         <div class="container2 page-break">
             <div class="container3">
@@ -3996,7 +3467,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">E-34</p>
+                            <p class="s-10 mb-0">E-23</p>
                         </div>
 
                     </div>

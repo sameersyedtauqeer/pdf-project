@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strategic Planning - Questionnaire.pdf
     </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+    <style>
+        {!! file_get_contents(resource_path('css/bootstrap.min.css')) !!}
+    </style>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
@@ -292,7 +293,7 @@
 
 
     <section>
-        <div class="container2 page-break">
+        <div class="container2">
             <div class="container3">
                 <div class="card">
                     <div class="table-wrapper ">
@@ -305,7 +306,9 @@
                                                 <!-- <img src="{{asset('assets/images/logo.jpg')}}" width="100%" alt=""> -->
                                             </div>
                                             <div class="table-cell text-center py-5">
-                                                <img src="{{asset('assets/images/logo.jpg')}}" width="80%" alt="">
+                                                <!-- <img src="{{asset('assets/images/logo.jpg')}}" width="80%" alt=""> -->
+                                                <img src="{{ $images['logoDark'] }}" width="80%" alt="Logo">
+
                                             </div>
                                             <div class="table-cell text-center ">
                                                 <!-- <img src="{{asset('assets/images/logo.jpg')}}" width="100%" alt=""> -->
@@ -548,8 +551,8 @@
                 <div class="card">
                     <div class="table-wrapper ">
                         <div class="table-row ">
-
-                            <h2 class="text-center fw-bold">
+                            <br>
+                            <h2 class="text-center fw-bold mt-3">
                                 Introduction
                             </h2>
 
@@ -632,7 +635,8 @@
                     <div class="table-wrapper ">
                         <div class="table-row ">
 
-                            <h2 class="text-center fw-bold">
+                            <br>
+                            <h2 class="text-center fw-bold mt-3">
                                 CONTACTING THE US DEPARTMENT OF LABOR AND LOCAL STATE LABOR BUREAUS
                             </h2>
 
@@ -705,7 +709,7 @@
                     <div class="table-wrapper ">
                         <div class="table-row ">
 
-                            <h2 class="text-center fw-bold">
+                            <h2 class="text-center fw-bold mt-3">
                                 PROFILE OF THE IDEAL KOSHA HIBACHI TEAM MEMBER
                             </h2>
 
@@ -755,6 +759,24 @@
                                     maintaining the prep area, etc.
 
                                 </li>
+
+                                <li> <b> Self-confidence -- </b>Your employees must exude confidence to your customers
+                                    and be willing to take increased responsibilities in stride.
+                                </li>
+
+                                <li> <b> Hard working -- </b> All employees need to demonstrate a strong work ethic.
+                                    You do not want to hire people who are clock-watchers.
+                                </li>
+
+
+                                <li> <b> Integrity -- </b>Your employees must be trustworthy. It will not always be
+                                    possible for you to be on the premises during all operating hours. Therefore, it is
+                                    critical that you have the confidence that all of your employees can be trusted to
+                                    carry out their duties responsibly and in the best interest of your customers and
+                                    you.
+
+                                </li>
+
                             </ul>
 
 
@@ -809,85 +831,11 @@
                     <div class="table-wrapper ">
                         <div class="table-row ">
 
-
-
-                            <ul class="s-15 fw-light">
-                                <li> <b> Self-confidence -- </b>Your employees must exude confidence to your customers
-                                    and be willing to take increased responsibilities in stride.
-                                </li>
-
-                                <li> <b> Hard working -- </b> All employees need to demonstrate a strong work ethic.
-                                    You do not want to hire people who are clock-watchers.
-                                </li>
-
-
-                                <li> <b> Integrity -- </b>Your employees must be trustworthy. It will not always be
-                                    possible for you to be on the premises during all operating hours. Therefore, it is
-                                    critical that you have the confidence that all of your employees can be trusted to
-                                    carry out their duties responsibly and in the best interest of your customers and
-                                    you.
-
-                                </li>
-                            </ul>
-
-
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-
-
-        <!-- ==== -->
-        <div class="container2 page-break">
-            <div class="container3">
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section D: Personnel</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-5</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-
                             <h2 class="fw-bold text-center">
                                 THE EMPLOYEE RECRUITMENT PROCESS
                             </h2>
 
-                            <p class="para-fw-light">
+                            <p class="para fw-light">
                                 When you begin to recruit employees to staff your Kosha Hibachi franchise or when you
                                 need to fill a staff vacancy, there are a number of possible sources you might consider.
                                 Some of the most common are:
@@ -1316,27 +1264,28 @@
                     </div>
 
                 </div>
-            </div>
 
-            <div class="table-wrapper">
-                <div class="table-row">
-                    <div class="table-cell w-50">
 
-                        <p class="s-10">
-                            Kosha Hibachi
-                            <br>
-                            Brand Standards Manual
-                        </p>
+                <div class="table-wrapper">
+                    <div class="table-row">
+                        <div class="table-cell w-50">
+
+                            <p class="s-10">
+                                Kosha Hibachi
+                                <br>
+                                Brand Standards Manual
+                            </p>
+                        </div>
+
+                        <div class="table-cell w-50">
+                            <p class="s-10 text-end">
+                                Copyright 2024
+                                <br>
+                                Kosha Hibachi Franchising. Inc.
+                            </p>
+                        </div>
+
                     </div>
-
-                    <div class="table-cell w-50">
-                        <p class="s-10 text-end">
-                            Copyright 2024
-                            <br>
-                            Kosha Hibachi Franchising. Inc.
-                        </p>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -1353,7 +1302,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-12</p>
+                            <p class="s-10 mb-0">D-7</p>
                         </div>
 
                     </div>
@@ -1476,7 +1425,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-13</p>
+                            <p class="s-10 mb-0">D-8</p>
                         </div>
 
                     </div>
@@ -1537,7 +1486,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-14</p>
+                            <p class="s-10 mb-0">D-9</p>
                         </div>
 
                     </div>
@@ -1671,7 +1620,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-15</p>
+                            <p class="s-10 mb-0">D-10</p>
                         </div>
 
                     </div>
@@ -1817,7 +1766,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-16</p>
+                            <p class="s-10 mb-0">D-11</p>
                         </div>
 
                     </div>
@@ -1935,7 +1884,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-17</p>
+                            <p class="s-10 mb-0">D-12</p>
                         </div>
 
                     </div>
@@ -2023,7 +1972,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-18</p>
+                            <p class="s-10 mb-0">D-13</p>
                         </div>
 
                     </div>
@@ -2106,7 +2055,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-19</p>
+                            <p class="s-10 mb-0">D-14</p>
                         </div>
 
                     </div>
@@ -2174,7 +2123,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-20</p>
+                            <p class="s-10 mb-0">D-15</p>
                         </div>
 
                     </div>
@@ -2285,7 +2234,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-21</p>
+                            <p class="s-10 mb-0">D-16</p>
                         </div>
 
                     </div>
@@ -2397,7 +2346,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-22</p>
+                            <p class="s-10 mb-0">D-17</p>
                         </div>
 
                     </div>
@@ -2471,7 +2420,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-23</p>
+                            <p class="s-10 mb-0">D-18</p>
                         </div>
 
                     </div>
@@ -2566,7 +2515,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-24</p>
+                            <p class="s-10 mb-0">D-19</p>
                         </div>
 
                     </div>
@@ -2682,7 +2631,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-25</p>
+                            <p class="s-10 mb-0">D-20</p>
                         </div>
 
                     </div>
@@ -2779,7 +2728,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-26</p>
+                            <p class="s-10 mb-0">D-21</p>
                         </div>
 
                     </div>
@@ -2855,7 +2804,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-27</p>
+                            <p class="s-10 mb-0">D-22</p>
                         </div>
 
                     </div>
@@ -2950,7 +2899,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-28</p>
+                            <p class="s-10 mb-0">D-23</p>
                         </div>
 
                     </div>
@@ -3255,7 +3204,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-29</p>
+                            <p class="s-10 mb-0">D-24</p>
                         </div>
 
                     </div>
@@ -3336,7 +3285,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-30</p>
+                            <p class="s-10 mb-0">D-25</p>
                         </div>
 
                     </div>
@@ -3420,7 +3369,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-31</p>
+                            <p class="s-10 mb-0">D-26</p>
                         </div>
 
                     </div>
@@ -3516,7 +3465,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-32</p>
+                            <p class="s-10 mb-0">D-27</p>
                         </div>
 
                     </div>
@@ -3586,7 +3535,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-33</p>
+                            <p class="s-10 mb-0">D-28</p>
                         </div>
 
                     </div>
@@ -3678,7 +3627,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-34</p>
+                            <p class="s-10 mb-0">D-29</p>
                         </div>
 
                     </div>
@@ -3766,7 +3715,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-34</p>
+                            <p class="s-10 mb-0">D-30</p>
                         </div>
 
                     </div>
@@ -3867,7 +3816,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">D-35</p>
+                            <p class="s-10 mb-0">D-31</p>
                         </div>
 
                     </div>

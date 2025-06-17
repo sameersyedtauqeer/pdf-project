@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strategic Planning - Questionnaire.pdf
     </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+        {!! file_get_contents(resource_path('css/bootstrap.min.css')) !!}
+    </style>
+
+    <style>
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url('{{ public_path('fonts/Poppins-Light.ttf') }}') format('truetype') !important;
+            font-weight: lighter !important;
+        }
 
         html,
         body {
-            font-family: 'Ubuntu', sans-serif;
+            font-family: "Poppins" !important;
             margin: 0;
+        }
+
+        p {
+            font-weight: lighter !important;
         }
 
         @page {
@@ -287,7 +298,7 @@
 
 
     <section>
-        <div class="container2 ">
+        <div class="container2">
             <div class="container3">
                 <div class="card">
                     <div class="table-wrapper ">
@@ -300,7 +311,7 @@
                                                 <!-- <img src="{{asset('assets/images/logo.jpg')}}" width="100%" alt=""> -->
                                             </div>
                                             <div class="table-cell text-center py-5">
-                                                <img src="{{asset('assets/images/logo.jpg')}}" width="80%" alt="">
+                                                <img src="{{ $images['logoDark'] }}" width="80%" alt="Logo">
                                             </div>
                                             <div class="table-cell text-center ">
                                                 <!-- <img src="{{asset('assets/images/logo.jpg')}}" width="100%" alt=""> -->
@@ -842,69 +853,6 @@
                                         events and promotional visits you will be doing with your trailer.
                                     </p>
 
-
-
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-        <!--  ======== -->
-
-        <div class="container2 page-break">
-            <div class="container3">
-
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section C: Managing a Kosha Hibachi</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-4</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
-
                                     <h3 class="fw-bold ">
                                         ORDER REGULARLY
                                     </h3>
@@ -927,6 +875,9 @@
                                         needs and order so you will have enough products to last until your next
                                         delivery.
                                     </p>
+
+
+
 
 
                                     <h3 class="fw-bold">
@@ -978,6 +929,7 @@
         </div>
 
 
+
         <!--  ======== -->
 
         <div class="container2 page-break">
@@ -990,7 +942,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-5</p>
+                            <p class="s-10 mb-0">C-4</p>
                         </div>
 
                     </div>
@@ -1095,7 +1047,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-6</p>
+                            <p class="s-10 mb-0">C-5</p>
                         </div>
 
                     </div>
@@ -1145,67 +1097,6 @@
                                             facilitate easy cleaning and allow air circulation, uniform temperature, and
                                             proper humidity.</li>
                                     </ul>
-
-
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-        <!--  ======== -->
-
-        <div class="container2 page-break">
-            <div class="container3">
-
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section C: Managing a Kosha Hibachi</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-7</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
 
 
                                     <h3 class="fw-bold">
@@ -1278,6 +1169,7 @@
 
         </div>
 
+
         <!--  ======== -->
 
         <div class="container2 page-break">
@@ -1290,7 +1182,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-8</p>
+                            <p class="s-10 mb-0">C-6</p>
                         </div>
 
                     </div>
@@ -1352,6 +1244,373 @@
                                     </ul>
 
 
+                                    <h3 class="fw-bold">
+                                        COST CONTROL
+                                    </h3>
+
+                                    <p class="para fw-light">
+                                        Costs generally include the cost of sales, labor, and operations. Business
+                                        profits increase when these costs are reduced.
+                                    </p>
+
+
+                                    <h3 class="fw-bold">
+                                        COST OF SALES:
+                                    </h3>
+                                    <p class="para fw-light">
+                                        The cost of sales generally means the actual cost of providing a business’
+                                        products and services. Unnecessary costs of sales usually stem from:
+                                    </p>
+
+                                    <ul class="s-15 fw-light align-justify">
+                                        <li> Poor buying decisions (having either too much or not enough stock in
+                                            relation to customer demand)</li>
+                                        <li> Mismanaged inventory (failing to rotate properly, leading to spoilage and
+                                            other waste)</li>
+                                        <li> Poor time management (ineffective task prioritization and performance)
+                                        </li>
+                                        <li> Careless or wasteful use of consumable materials</li>
+                                    </ul>
+
+                                    <p class="para fw-light">
+                                        Only by monitoring these factors closely and routinely will you be able to
+                                        control them.
+                                    </p>
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="table-wrapper">
+                    <div class="table-row">
+                        <div class="table-cell w-50">
+
+                            <p class="s-10">
+                                Kosha Hibachi
+                                <br>
+                                Brand Standards Manual
+                            </p>
+                        </div>
+
+                        <div class="table-cell w-50">
+                            <p class="s-10 text-end">
+                                Copyright 2024
+                                <br>
+                                Kosha Hibachi Franchising. Inc.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!--  ======== -->
+
+        <div class="container2 page-break">
+            <div class="container3">
+
+                <div class="table-wrapper">
+                    <div class="table-row">
+                        <div class="w-50 text-start table-cell ">
+                            <p class="s-10 mb-0">Section C: Managing a Kosha Hibachi</p>
+                        </div>
+
+                        <div class="w-50 table-cell text-end">
+                            <p class="s-10 mb-0">C-7</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="table-wrapper ">
+                        <div class="table-row ">
+                            <div class="table-cell  border-0 pt-3">
+                                <div>
+
+
+
+                                    <h3 class="fw-bold">
+                                        OPERATING COSTS:
+                                    </h3>
+
+
+                                    <p class="para fw-light">
+                                        Operating costs include variable expenses for such things as utilities,
+                                        maintenance, and repairs. Make the cutting of operating costs a shared
+                                        responsibility with your employees. Impress upon them that operating costs can
+                                        be controlled in the following ways:
+                                    </p>
+
+                                    <ul class="s-15 fw-light">
+                                        <li> Regulating heating and cooling systems</li>
+                                        <li> Turning off the truck as often as possible and keeping equipment in good
+                                            working form </li>
+                                        <li> Avoiding waste of supplies, especially paper products</li>
+                                        <li> Monitoring the inventory of supplies regularly to detect any loss</li>
+
+                                        <li> Buying supplies in quantities that afford you the best savings without
+                                            overloading inventory or tying up too much capital</li>
+                                        <li> Keeping all equipment clean, as this prevents repairs and helps ensure the
+                                            life of the equipment</li>
+                                        <li> Making as many repairs yourself as possible
+                                        </li>
+                                        <li> Having a repair person check other equipment while performing preventive
+                                            maintenance</li>
+                                        <li> Scheduling repairs during regular business hours but during your non-peak
+                                            periods, if possible</li>
+                                    </ul>
+
+
+
+
+
+                                    <h3 class="fw-bold">
+                                        LABOR COSTS:
+                                    </h3>
+
+
+                                    <p class="para fw-light">
+                                        Labor costs can be higher than they need to be because of weak hiring,
+                                        inadequate supervision, and poor use of materials. To keep your labor costs to a
+                                        minimum, Kosha Hibachi LLC recommends that you:
+                                    </p>
+
+                                    <ul class="s-15 fw-light">
+                                        <li> Select qualified employees and only hire when absolutely needed. This
+                                            business should not require a large number of employees for you to be
+                                            successful. Certain franchisees may prefer to operate the business entirely
+                                            themselves!</li>
+                                        <li> Train all personnel thoroughly.
+                                        </li>
+                                        <li> Supervise your employees directly, not just by observing them as they
+                                            perform their duties but by being readily available to lend assistance and
+                                            support.</li>
+                                        <li> Prepare effective work schedules.</li>
+                                    </ul>
+
+
+                                    <h3 class="fw-bold">
+                                        ANALYZING COSTS
+                                    </h3>
+
+
+                                    <p class="para fw-light">
+                                        As a means of further controlling costs, Kosha Hibachi LLC suggests you analyze
+                                        them regularly.
+                                    </p>
+
+                                    <ul class="s-15 fw-light">
+                                        <li> Calculate food costs by adding up purchases for the period to the opening
+                                            inventory and then subtracting the closing inventory.</li>
+                                        <li> When figuring labor costs, be sure to add the costs of FICA (social
+                                            security), unemployment insurance, health insurance, vacation time, and
+                                            other employee benefits, if applicable.
+                                        </li>
+                                    </ul>
+
+                                    <p class="s-15 fw-light">
+                                        Check food and labor, weekly by dividing each by gross sales. This will provide
+                                        you with the percentage of gross sales each represents.
+
+                                        <br>
+                                        <br>
+                                        This can vary depending on the vendors you choose. Some events and locations can
+                                        offer meals at significantly higher pricing than the average given the
+                                        demographics of the festival or event attended.
+
+                                        <br>
+                                        <br>
+                                        Labor costs will depend on the size of the staff that you decide to hire. In
+                                        addition, Kosha Hibachi LLC recommends that you tabulate your costs monthly to
+                                        help detect seasonal or period trends. These may be relevant to the cost-cutting
+                                        measures you institute and the future of your business. Regular analysis will
+                                        help you balance costs even as you guarantee quality products and customer
+                                        service.
+
+
+                                    </p>
+
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="table-wrapper">
+                    <div class="table-row">
+                        <div class="table-cell w-50">
+
+                            <p class="s-10">
+                                Kosha Hibachi
+                                <br>
+                                Brand Standards Manual
+                            </p>
+                        </div>
+
+                        <div class="table-cell w-50">
+                            <p class="s-10 text-end">
+                                Copyright 2024
+                                <br>
+                                Kosha Hibachi Franchising. Inc.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!--  ======== -->
+
+        <div class="container2 page-break">
+            <div class="container3">
+
+                <div class="table-wrapper">
+                    <div class="table-row">
+                        <div class="w-50 text-start table-cell ">
+                            <p class="s-10 mb-0">Section C: Managing a Kosha Hibachi</p>
+                        </div>
+
+                        <div class="w-50 table-cell text-end">
+                            <p class="s-10 mb-0">C-8</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="table-wrapper ">
+                        <div class="table-row ">
+                            <div class="table-cell  border-0 pt-3">
+                                <div>
+
+
+
+
+
+                                    <h3 class="fw-bold">
+                                        INCREASING SALES
+                                    </h3>
+
+                                    <p class="para fw-light">
+                                        Naturally, every businessperson tries to spend less than they take in. However,
+                                        the most successful managers monitor the smallest details in every area they
+                                        oversee so no waste escapes their attention. They then put this “awareness of
+                                        profitability” into practice every day.
+                                        <br>
+                                        <br>
+                                        Sales can be kept consistently high if you tend to the following:
+                                    </p>
+
+                                    <p class="para fw-bold">
+                                        Maintain a clean trailer and workspace:
+                                    </p>
+
+                                    <ul class="s-15 fw-light">
+                                        <li> Keep the trailer exterior and prep area clean at all times.</li>
+                                        <li> Be sure your employees are always well groomed and reflect Kosha
+                                            Hibachi’s image with honor and dignity.
+                                        </li>
+                                        <li>
+                                            Uphold Kosha Hibachi standards for appearance by replacing worn equipment
+                                            and supplies (small wares, napkins, tablecloths, etc.) as necessary.
+                                        </li>
+                                    </ul>
+
+
+                                    <p class="para fw-bold">
+                                        Maintain the proper attitude:
+                                    </p>
+
+                                    <ul class="s-15 fw-light">
+                                        <li> Treat your customers as your favorite family and a priority.</li>
+                                        <li> Train your employees to be competent, conscientious, and enthusiastic and
+                                            how to greet with names like Unc, Uncle, Brother, Sis, Sister, Auntie,
+                                            Nephew, Niece, Fam, etc.
+                                        </li>
+                                    </ul>
+
+
+                                    <p class="para fw-bold">
+                                        Keep advertising levels appropriately high:
+                                    </p>
+
+                                    <ul class="s-15 fw-light">
+                                        <li> Follow the guidelines discussed in the “Marketing” section of this manual.
+                                            (Section F)</li>
+                                        <li> Meet the required local advertising expenditures, as noted in your
+                                            Franchise Agreement. </li>
+
+                                    </ul>
+
+
+                                    <p class="para fw-bold">
+                                        Institute suggestive selling:
+                                    </p>
+
+                                    <ul class="s-15 fw-light">
+                                        <li> Train employees to build sales by suggesting additional items (an
+                                            additional side).</li>
+                                        <li> Develop incentives.
+                                        </li>
+                                    </ul>
+
+                                    <p class="para fw-light">
+                                        If you follow these guidelines, you will be well on your way to ensuring
+                                        customer satisfaction, thus resulting in customer referrals, which will be one
+                                        of your best advertisements and an effective means of increasing your sales.
+                                    </p>
+
+                                    <h3 class="fw-bold">
+                                        INVENTORY CONTROLS
+                                    </h3>
+
+                                    <p class="para fw-light">
+                                        Your inventory is as valuable as money, and it should be protected in the same
+                                        way. You still must do all you can to prevent loss. Three principal causes of
+                                        inventory shortages are:
+                                    </p>
+
+                                    <h3 class="fw-bold">
+                                        EMPLOYEE DISHONESTY
+                                    </h3>
+
+                                    <p class="para fw-light">
+                                        Employee dishonesty can be in the form of employees taking unauthorized food or
+                                        beverages. To avoid this, you should establish a firm policy regarding which
+                                        items, if any, employees can purchase at discounted prices. You may want to
+                                        provide them with a free beverage during breaks or allow them to purchase food
+                                        at discounted prices before or after their shifts. Whatever policy you decide to
+                                        institute, follow it precisely. Let employees know that a food/beverage policy
+                                        is a privilege not to be abused. All employee purchases should be rung up by the
+                                        manager or another employee, but never by the purchaser himself. (Set an example
+                                        by doing the same yourself).
+                                    </p>
+
+
+
+
                                 </div>
 
 
@@ -1411,547 +1670,13 @@
                         <div class="table-row ">
                             <div class="table-cell  border-0 pt-3">
                                 <div>
-                                    <h3 class="fw-bold">
-                                        COST CONTROL
-                                    </h3>
-
-                                    <p class="para fw-light">
-                                        Costs generally include the cost of sales, labor, and operations. Business
-                                        profits increase when these costs are reduced.
-                                    </p>
-
-
-                                    <h3 class="fw-bold">
-                                        COST OF SALES:
-                                    </h3>
-                                    <p class="para fw-light">
-                                        The cost of sales generally means the actual cost of providing a business’
-                                        products and services. Unnecessary costs of sales usually stem from:
-                                    </p>
-
-                                    <ul class="s-15 fw-light align-justify">
-                                        <li> Poor buying decisions (having either too much or not enough stock in
-                                            relation to customer demand)</li>
-                                        <li> Mismanaged inventory (failing to rotate properly, leading to spoilage and
-                                            other waste)</li>
-                                        <li> Poor time management (ineffective task prioritization and performance)
-                                        </li>
-                                        <li> Careless or wasteful use of consumable materials</li>
-                                    </ul>
-
-                                    <p class="para fw-light">
-                                        Only by monitoring these factors closely and routinely will you be able to
-                                        control them.
-                                    </p>
-
-
-                                    <h3 class="fw-bold">
-                                        OPERATING COSTS:
-                                    </h3>
-
-
-                                    <p class="para fw-light">
-                                        Operating costs include variable expenses for such things as utilities,
-                                        maintenance, and repairs. Make the cutting of operating costs a shared
-                                        responsibility with your employees. Impress upon them that operating costs can
-                                        be controlled in the following ways:
-                                    </p>
-
-                                    <ul class="s-15 fw-light">
-                                        <li> Regulating heating and cooling systems</li>
-                                        <li> Turning off the truck as often as possible and keeping equipment in good
-                                            working form </li>
-                                        <li> Avoiding waste of supplies, especially paper products</li>
-                                        <li> Monitoring the inventory of supplies regularly to detect any loss</li>
-                                    </ul>
-
-
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-        <!--  ======== -->
-
-        <div class="container2 page-break">
-            <div class="container3">
-
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section C: Managing a Kosha Hibachi</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-10</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
-                                    <ul class="s-15 fw-light align-justify">
-                                        <li> Buying supplies in quantities that afford you the best savings without
-                                            overloading inventory or tying up too much capital</li>
-                                        <li> Keeping all equipment clean, as this prevents repairs and helps ensure the
-                                            life of the equipment</li>
-                                        <li> Making as many repairs yourself as possible
-                                        </li>
-                                        <li> Having a repair person check other equipment while performing preventive
-                                            maintenance</li>
-                                        <li> Scheduling repairs during regular business hours but during your non-peak
-                                            periods, if possible</li>
-                                    </ul>
-
-
-                                    <h3 class="fw-bold">
-                                        LABOR COSTS:
-                                    </h3>
-
-
-                                    <p class="para fw-light">
-                                        Labor costs can be higher than they need to be because of weak hiring,
-                                        inadequate supervision, and poor use of materials. To keep your labor costs to a
-                                        minimum, Kosha Hibachi LLC recommends that you:
-                                    </p>
-
-                                    <ul class="s-15 fw-light">
-                                        <li> Select qualified employees and only hire when absolutely needed. This
-                                            business should not require a large number of employees for you to be
-                                            successful. Certain franchisees may prefer to operate the business entirely
-                                            themselves!</li>
-                                        <li> Train all personnel thoroughly.
-                                        </li>
-                                        <li> Supervise your employees directly, not just by observing them as they
-                                            perform their duties but by being readily available to lend assistance and
-                                            support.</li>
-                                        <li> Prepare effective work schedules.</li>
-                                    </ul>
-
-
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!--  ======== -->
-
-        <div class="container2 page-break">
-            <div class="container3">
-
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section C: Managing a Kosha Hibachi</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-11</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
-
-
-                                    <h3 class="fw-bold">
-                                        ANALYZING COSTS
-                                    </h3>
-
-
-                                    <p class="para fw-light">
-                                        As a means of further controlling costs, Kosha Hibachi LLC suggests you analyze
-                                        them regularly.
-                                    </p>
-
-                                    <ul class="s-15 fw-light">
-                                        <li> Calculate food costs by adding up purchases for the period to the opening
-                                            inventory and then subtracting the closing inventory.</li>
-                                        <li> When figuring labor costs, be sure to add the costs of FICA (social
-                                            security), unemployment insurance, health insurance, vacation time, and
-                                            other employee benefits, if applicable.
-                                        </li>
-                                    </ul>
-
-                                    <p class="s-15 fw-light">
-                                        Check food and labor, weekly by dividing each by gross sales. This will provide
-                                        you with the percentage of gross sales each represents.
-
-                                        <br>
-                                        <br>
-                                        This can vary depending on the vendors you choose. Some events and locations can
-                                        offer meals at significantly higher pricing than the average given the
-                                        demographics of the festival or event attended.
-
-                                        <br>
-                                        <br>
-                                        Labor costs will depend on the size of the staff that you decide to hire. In
-                                        addition, Kosha Hibachi LLC recommends that you tabulate your costs monthly to
-                                        help detect seasonal or period trends. These may be relevant to the cost-cutting
-                                        measures you institute and the future of your business. Regular analysis will
-                                        help you balance costs even as you guarantee quality products and customer
-                                        service.
-
-
-                                    </p>
-
-
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-        <!--  ======== -->
-
-        <div class="container2 page-break">
-            <div class="container3">
-
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section C: Managing a Kosha Hibachi</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-12</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
-                                    <h3 class="fw-bold">
-                                        INCREASING SALES
-                                    </h3>
-
-                                    <p class="para fw-light">
-                                        Naturally, every businessperson tries to spend less than they take in. However,
-                                        the most successful managers monitor the smallest details in every area they
-                                        oversee so no waste escapes their attention. They then put this “awareness of
-                                        profitability” into practice every day.
-                                        <br>
-                                        <br>
-                                        Sales can be kept consistently high if you tend to the following:
-                                    </p>
-
-                                    <p class="para fw-bold">
-                                        Maintain a clean trailer and workspace:
-                                    </p>
-
-                                    <ul class="s-15 fw-light">
-                                        <li> Keep the trailer exterior and prep area clean at all times.</li>
-                                        <li> Be sure your employees are always well groomed and reflect Kosha
-                                            Hibachi’s image with honor and dignity.
-                                        </li>
-                                        <li>
-                                            Uphold Kosha Hibachi standards for appearance by replacing worn equipment
-                                            and supplies (small wares, napkins, tablecloths, etc.) as necessary.
-                                        </li>
-                                    </ul>
-
-
-                                    <p class="para fw-bold">
-                                        Maintain the proper attitude:
-                                    </p>
-
-                                    <ul class="s-15 fw-light">
-                                        <li> Treat your customers as your favorite family and a priority.</li>
-                                        <li> Train your employees to be competent, conscientious, and enthusiastic and
-                                            how to greet with names like Unc, Uncle, Brother, Sis, Sister, Auntie,
-                                            Nephew, Niece, Fam, etc.
-                                        </li>
-                                    </ul>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!--  ======== -->
-
-        <div class="container2 page-break">
-            <div class="container3">
-
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section C: Managing a Kosha Hibachi</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-13</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
-                                    <p class="para fw-bold">
-                                        Keep advertising levels appropriately high:
-                                    </p>
-
-                                    <ul class="s-15 fw-light">
-                                        <li> Follow the guidelines discussed in the “Marketing” section of this manual.
-                                            (Section F)</li>
-                                        <li> Meet the required local advertising expenditures, as noted in your
-                                            Franchise Agreement. </li>
-
-                                    </ul>
-
-
-                                    <p class="para fw-bold">
-                                        Institute suggestive selling:
-                                    </p>
-
-                                    <ul class="s-15 fw-light">
-                                        <li> Train employees to build sales by suggesting additional items (an
-                                            additional side).</li>
-                                        <li> Develop incentives.
-                                        </li>
-                                    </ul>
-
-                                    <p class="para fw-light">
-                                        If you follow these guidelines, you will be well on your way to ensuring
-                                        customer satisfaction, thus resulting in customer referrals, which will be one
-                                        of your best advertisements and an effective means of increasing your sales.
-                                    </p>
-
-                                    <h3 class="fw-bold">
-                                        INVENTORY CONTROLS
-                                    </h3>
-
-                                    <p class="para fw-light">
-                                        Your inventory is as valuable as money, and it should be protected in the same
-                                        way. You still must do all you can to prevent loss. Three principal causes of
-                                        inventory shortages are:
-                                    </p>
-
-                                    <h3 class="fw-bold">
-                                        EMPLOYEE DISHONESTY
-                                    </h3>
-
-                                    <p class="para fw-light">
-                                        Employee dishonesty can be in the form of employees taking unauthorized food or
-                                        beverages. To avoid this, you should establish a firm policy regarding which
-                                        items, if any, employees can purchase at discounted prices. You may want to
-                                        provide them with a free beverage during breaks or allow them to purchase food
-                                        at discounted prices before or after their shifts. Whatever policy you decide to
-                                        institute, follow it precisely. Let employees know that a food/beverage policy
-                                        is a privilege not to be abused. All employee purchases should be rung up by the
-                                        manager or another employee, but never by the purchaser himself. (Set an example
-                                        by doing the same yourself).
-                                    </p>
-
-
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!--  ======== -->
-
-        <div class="container2 page-break">
-            <div class="container3">
-
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section C: Managing a Kosha Hibachi</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-14</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
 
 
                                     <h3 class="fw-bold">
                                         CASH CONTROLS
                                     </h3>
 
-                                    <p class="para fw-light">
+                                    <p class="para fw-bold">
                                         Good cash control is one of the essential features of a profitable, well-managed
                                         business. Consequently, it merits your constant attention.
                                         <br>
@@ -1984,67 +1709,6 @@
                                             the seriousness of your cash control policies.</li>
                                     </ul>
 
-
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="table-cell w-50">
-
-                            <p class="s-10">
-                                Kosha Hibachi
-                                <br>
-                                Brand Standards Manual
-                            </p>
-                        </div>
-
-                        <div class="table-cell w-50">
-                            <p class="s-10 text-end">
-                                Copyright 2024
-                                <br>
-                                Kosha Hibachi Franchising. Inc.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!--  ======== -->
-
-        <div class="container2 page-break">
-            <div class="container3">
-
-                <div class="table-wrapper">
-                    <div class="table-row">
-                        <div class="w-50 text-start table-cell ">
-                            <p class="s-10 mb-0">Section C: Managing a Kosha Hibachi</p>
-                        </div>
-
-                        <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-15</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="table-wrapper ">
-                        <div class="table-row ">
-                            <div class="table-cell  border-0 pt-3">
-                                <div>
 
 
                                     <h3 class="fw-bold">
@@ -2099,6 +1763,7 @@
 
 
 
+
                                 </div>
 
 
@@ -2137,6 +1802,7 @@
         </div>
 
 
+
         <!--  ======== -->
 
         <div class="container2 page-break">
@@ -2149,7 +1815,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-16</p>
+                            <p class="s-10 mb-0">C-10</p>
                         </div>
 
                     </div>
@@ -2319,7 +1985,7 @@
                         </div>
 
                         <div class="w-50 table-cell text-end">
-                            <p class="s-10 mb-0">C-17</p>
+                            <p class="s-10 mb-0">C-11</p>
                         </div>
 
                     </div>
